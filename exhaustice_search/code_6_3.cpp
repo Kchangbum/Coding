@@ -48,6 +48,7 @@ bool hasWord(int y, int x, const string& word) {
                 int nextY = y + dy[direction];
 
                 //다음 위치에서 나머지 단어 탐색
+                //substr(): 문자열에서 특정 부분을 잘라 새로운 문자열을 생성하는 함수
                 if (hasWord(nextY, nextX, word.substr(1))) return true;
         }
         return false;
